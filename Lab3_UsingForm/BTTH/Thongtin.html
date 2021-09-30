@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <form align='center' action="Thongtin.php" method="post" id="myForm">
+        <table style="border: 1px solid black; background-color: #FFCCCC;" align='center'>
+            <tr bgcolor="yellow">
+                <th colspan="2" align="center">
+                    <h3>
+                    <font color="blue">Enter your information</font>
+                    </h3>
+                </th>
+            </tr>
+            <tr>
+                <td>Họ tên:</td>
+                <td style="float: left;"><input type="text" name="hoten" size="60" value="" /></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td style="float: left;"><input type="text" name="diachi" size="60" value=" " /></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td style="float: left;"><input type="text" name="sdt" size="20" value="" /></td>
+            </tr>
+            <tr>
+                <td>Giới tính:</td>
+                <td style="float: left;"><input type="radio" name="gt" value="Nam">Nam
+                    <input type="radio" name="gt" value="Nữ">Nữ</td>
+            </tr>
+            <tr>
+                <td>Quốc tịch:</td>
+                <td style="float: left;">
+				<select name="quoctich">
+					<option value="Việt Nam">Việt Nam</option>
+					<option value="Mỹ">Mỹ</option>
+					<option value="Nhật Bản">Nhật Bản</option>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td>Các môn đã học:</td>
+                <td style="float: left;">
+					<input type="checkbox" name="mh1" value="PHP & MYSQL">PHP & MYSQL
+                    <input type="checkbox" name="mh2" value="C">C#
+                    <input type="checkbox" name="mh3" value="XML">XML
+                    <input type="checkbox" name="mh4" value="Python">Python
+				</td>
+            </tr>
+            <tr>
+                <td>Ghi chú:</td>
+                <td><textarea name="gc" rows="5" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="left" style="padding-left: 100px;"><input type="submit" value="Gửi" />
+                    <input type="button" onclick="myFunction()" value="Hủy"> </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function myFunction() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
+</html>
