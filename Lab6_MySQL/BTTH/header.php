@@ -29,8 +29,8 @@
         </ul>
 		</li>
 	  <?php 
-       if (isset($_SESSION['username']) && $_SESSION['username']){
-           echo 'Xin chào '.$_SESSION['username']."<br/>";
+       if (isset($_SESSION['name']) && $_SESSION['name']){
+           echo 'Xin chào '.$_SESSION['name']."<br/>";
            echo '<li><a href="logout.php">Đăng xuất</a></li>';
        }
        else{
